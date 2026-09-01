@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelCore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo topo-publico">
+  <div class="topo-conteudo">
+    <h1><span class="logo-icone" aria-hidden="true"></span>SentinelCore</h1>
+    <div id="area-usuario"></div>
+  </div>
+  <p>Plataforma de Conscientização em Cibersegurança</p>
+  <nav class="menu-categorias">
+    <a href="index.html">Início</a>
+    <a href="conteudo-lista.html?categoria=curiosidade" data-categoria="curiosidade">Curiosidades</a>
+    <a href="conteudo-lista.html?categoria=pesquisa" data-categoria="pesquisa">Pesquisas</a>
+    <a href="conteudo-lista.html?categoria=premio" data-categoria="premio">Prêmios</a>
+    <a href="conteudo-lista.html?categoria=especialista" data-categoria="especialista">Especialistas</a>
+    <a href="conteudo-lista.html?categoria=evento" data-categoria="evento">Eventos 🔒</a>
+    <a href="conteudo-lista.html?categoria=conteudo" data-categoria="conteudo">Conteúdo 🔒</a>
+  </nav>
+</header>
+
+  <section class="banner-noticias-section">
+    <div id="banner-noticias" class="banner-noticias">
+    </div>
+    <div id="banner-dots" class="banner-dots"></div>
+  </section>
+
+  <main id="app">
+
+    <section class="dicas-section">
+      <h2>Dicas Rápidas</h2>
+      <div id="lista-dicas" class="lista-dicas">
+      </div>
+    </section>
+
+  </main>
+
+  <section class="importancia-section">
+    <h2 class="importancia-titulo">A importância da cibersegurança</h2>
+      <p class="importancia-intro">
+        Vivemos cada vez mais conectados — trabalhamos, estudamos, nos relacionamos e movimentamos dinheiro pela internet.
+        Toda essa comodidade, porém, também abre portas para golpes, roubo de dados e ataques que podem afetar seriamente a nossa vida real.
+        A cibersegurança é o conjunto de práticas, tecnologias e cuidados que protegem nossas informações, nossos dispositivos e nossa privacidade.
+        Entender seus princípios deixou de ser assunto só de especialistas: hoje é uma habilidade essencial para qualquer pessoa no mundo digital.
+      </p>
+
+      <div class="importancia-grade">
+        <div class="importancia-topico">
+          <h3>Proteção de dados pessoais</h3>
+          <p>
+            Seus dados — nome, CPF, senhas, fotos, localização e hábitos — têm enorme valor e são alvo constante de criminosos.
+            Protegê-los significa controlar o que você compartilha, com quem e por quê. Revisar as permissões dos aplicativos,
+            evitar redes públicas em tarefas sensíveis e desconfiar de quem pede informações demais ajuda a manter sua identidade digital sob seu controle.
+          </p>
+        </div>
+
+        <div class="importancia-topico">
+          <h3>Phishing e engenharia social</h3>
+          <p>
+            A maioria dos ataques bem-sucedidos não explora falhas técnicas, mas sim a confiança das pessoas.
+            No phishing, golpistas se passam por bancos, empresas ou conhecidos para induzir você a clicar em links falsos ou entregar senhas.
+            Desconfiar de mensagens urgentes, conferir o remetente e nunca fornecer dados por links recebidos são defesas simples e poderosas.
+          </p>
+        </div>
+
+        <div class="importancia-topico">
+          <h3>Malware e ransomware</h3>
+          <p>
+            Malware é qualquer programa malicioso criado para roubar informações, espionar ou danificar sistemas.
+            O ransomware, uma de suas formas mais temidas, sequestra seus arquivos e exige resgate para liberá-los.
+            Manter o sistema e os aplicativos atualizados, usar um bom antivírus e fazer backups regulares reduz drasticamente o risco de perder tudo.
+          </p>
+        </div>
+
+        <div class="importancia-topico">
+          <h3>Senhas e autenticação</h3>
+          <p>
+            As senhas são a primeira barreira de proteção das suas contas — e também a mais atacada.
+            Usar senhas longas, únicas para cada serviço e guardá-las em um gerenciador dificulta muito a vida dos invasores.
+            Somando a isso a autenticação em duas etapas (2FA), mesmo que uma senha vaze, sua conta continua protegida por uma segunda camada.
+          </p>
+        </div>
+      </div>
+
+      <a href="conteudo-lista.html?categoria=curiosidade" class="btn-importancia">Mais informações <span aria-hidden="true">›</span></a>
+  </section>
+
+  <section class="noticias-destaque-section">
+    <h2 class="importancia-titulo">Mais notícias sobre segurança</h2>
+    <div id="lista-noticias-destaque" class="noticias-destaque-lista"></div>
+  </section>
+
+  <script src="js/publico.js"></script>
+  <script src="js/noticias.js"></script>
+  <script src="js/noticias-destaque.js"></script>
+</body>
+</html>

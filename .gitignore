@@ -1,0 +1,5 @@
+node_modules/
+.env
+database/sentinelcore.db
+public/uploads/*
+!public/uploads/.gitkeep

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelCore - Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <h1><span class="logo-icone" aria-hidden="true"></span>SentinelCore</h1>
+    <p>Crie sua conta</p>
+  </header>
+
+  <main class="auth-container">
+
+    <div id="etapa-escolha" class="etapa-escolha">
+      <h2 class="titulo-etapa">Como você quer se cadastrar?</h2>
+
+      <div class="cards-tipo">
+        <div class="card-tipo" data-tipo="empresa_admin">
+          <div class="card-tipo-icone">🏢</div>
+          <h3>Cadastro como Empresa</h3>
+          <p>Libere o treinamento para seus funcionários e monitore o desempenho de cada um pelo painel administrativo.</p>
+        </div>
+
+        <div class="card-tipo" data-tipo="funcionario">
+          <div class="card-tipo-icone">👥</div>
+          <h3>Cadastro como Funcionário</h3>
+          <p>Sua empresa já está cadastrada? Use o código de convite fornecido pelo seu administrador. Gratuito.</p>
+        </div>
+
+        <div class="card-tipo" data-tipo="individual">
+          <div class="card-tipo-icone">👤</div>
+          <h3>Cadastro Individual</h3>
+          <p>Quer se capacitar por conta própria, sem vínculo com empresa? Acesso completo com pagamento único.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="etapa-formulario" class="etapa-formulario" style="display:none;">
+      <button type="button" id="btn-voltar" class="btn-voltar">← Escolher outro tipo</button>
+
+      <p id="descricao-tipo" class="descricao-tipo"></p>
+
+      <form id="form-cadastro" class="form-auth" enctype="multipart/form-data">
+        <input type="hidden" name="tipoConta" id="tipoConta">
+
+        <label>Nome completo</label>
+        <input type="text" name="nome" required>
+
+        <label>E-mail corporativo</label>
+        <input type="email" name="email" required>
+
+        <label>Senha</label>
+        <input type="password" name="senha" required minlength="6">
+
+        <label>Cargo na empresa</label>
+        <input type="text" name="cargo" required>
+
+        <div id="campo-empresa" class="campo-condicional" style="display:none;">
+          <label>Nome da empresa</label>
+          <input type="text" name="nomeEmpresa">
+        </div>
+
+        <div id="campo-funcionario" class="campo-condicional" style="display:none;">
+          <label>Código de convite da empresa</label>
+          <input type="text" name="codigoConvite">
+        </div>
+
+        <label>Foto de identificação</label>
+        <input type="file" name="foto" accept="image/*">
+
+        <button type="submit" class="btn-enviar">Cadastrar</button>
+        <p id="mensagem-cadastro"></p>
+      </form>
+    </div>
+
+    <p class="link-alternativo">Já tem conta? <a href="login.html">Fazer login</a></p>
+  </main>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>

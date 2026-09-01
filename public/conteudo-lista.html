@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelCore</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <header class="topo topo-publico">
+  <div class="topo-conteudo">
+    <h1><span class="logo-icone" aria-hidden="true"></span>SentinelCore</h1>
+    <div id="area-usuario"></div>
+  </div>
+  <p>Plataforma de Conscientização em Cibersegurança</p>
+  <nav class="menu-categorias">
+    <a href="index.html">Início</a>
+    <a href="conteudo-lista.html?categoria=curiosidade" data-categoria="curiosidade">Curiosidades</a>
+    <a href="conteudo-lista.html?categoria=pesquisa" data-categoria="pesquisa">Pesquisas</a>
+    <a href="conteudo-lista.html?categoria=premio" data-categoria="premio">Prêmios</a>
+    <a href="conteudo-lista.html?categoria=especialista" data-categoria="especialista">Especialistas</a>
+    <a href="conteudo-lista.html?categoria=evento" data-categoria="evento">Eventos 🔒</a>
+    <a href="conteudo-lista.html?categoria=conteudo" data-categoria="conteudo">Conteúdo 🔒</a>
+  </nav>
+</header>
+
+ <main id="app" class="conteudo-lista-container">
+  <h2 id="titulo-categoria">Carregando...</h2>
+
+  <div id="filtros-evento" class="filtros-evento" style="display:none;">
+    <select id="filtro-mes">
+      <option value="">Todos os meses</option>
+      <option value="01">Janeiro</option>
+      <option value="02">Fevereiro</option>
+      <option value="03">Março</option>
+      <option value="04">Abril</option>
+      <option value="05">Maio</option>
+      <option value="06">Junho</option>
+      <option value="07">Julho</option>
+      <option value="08">Agosto</option>
+      <option value="09">Setembro</option>
+      <option value="10">Outubro</option>
+      <option value="11">Novembro</option>
+      <option value="12">Dezembro</option>
+    </select>
+
+    <select id="filtro-estado">
+      <option value="">Todos os estados</option>
+      <option value="BR">Nacional / Itinerante</option>
+      <option value="INT">Internacional</option>
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+      <option value="AM">Amazonas</option>
+      <option value="BA">Bahia</option>
+      <option value="CE">Ceará</option>
+      <option value="DF">Distrito Federal</option>
+      <option value="ES">Espírito Santo</option>
+      <option value="GO">Goiás</option>
+      <option value="MA">Maranhão</option>
+      <option value="MT">Mato Grosso</option>
+      <option value="MS">Mato Grosso do Sul</option>
+      <option value="MG">Minas Gerais</option>
+      <option value="PA">Pará</option>
+      <option value="PB">Paraíba</option>
+      <option value="PR">Paraná</option>
+      <option value="PE">Pernambuco</option>
+      <option value="PI">Piauí</option>
+      <option value="RJ">Rio de Janeiro</option>
+      <option value="RN">Rio Grande do Norte</option>
+      <option value="RS">Rio Grande do Sul</option>
+      <option value="RO">Rondônia</option>
+      <option value="RR">Roraima</option>
+      <option value="SC">Santa Catarina</option>
+      <option value="SP">São Paulo</option>
+      <option value="SE">Sergipe</option>
+      <option value="TO">Tocantins</option>
+    </select>
+  </div>
+
+  <div id="lista-conteudos" class="grade-conteudos"></div>
+</main>
+
+  <script src="js/publico.js"></script>
+  <script src="js/conteudo-lista.js"></script>
+</body>
+</html>

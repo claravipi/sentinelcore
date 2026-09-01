@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelCore - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <h1><span class="logo-icone" aria-hidden="true"></span>SentinelCore</h1>
+    <p>Acesse sua conta</p>
+  </header>
+
+  <main class="auth-container">
+    <form id="form-login" class="form-auth">
+      <label>E-mail corporativo</label>
+      <input type="email" name="email" required>
+
+      <label>Senha</label>
+      <input type="password" name="senha" required>
+
+      <button type="submit" class="btn-enviar">Entrar</button>
+      <p id="mensagem-login"></p>
+    </form>
+
+    <p class="link-alternativo">Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+</html>
